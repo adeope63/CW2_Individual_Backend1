@@ -48,7 +48,7 @@ app.use(cors());
         .find()
         .toArray()
         .then((lesson) => {
-          res.status(200).json({lessons });
+          res.status(200).json();
         })
         .catch((error) => console.error(error));
     });
